@@ -1,0 +1,24 @@
+@CHARSET "UTF-8";
+body {margin: 0px; background-color: #ffffff; background-image: url("../Images/DiaperPlanner-Header.jpg"); background-repeat:no-repeat; background-position:top; font-family: Verdana, Arial, Sans-Serif; font-size: 14px;}
+table { border-collapse:collapse;}
+input, select {font-family: Arial, Sans-Serif; font-size: 14px; padding: 4px;}
+hr {display: block; float: left; border-top: 1px solid #00dcd3; margin: 2px; width: 90%;}
+    
+a {color: #21b1ab; text-decoration: none;}
+.alignright {text-align: right;}
+    
+h2 {color: #21b1ab;}
+h3 {color: #21b1ab;}
+    
+#content {display:block; float: none; width:1000px; border: 0px solid #cccccc; margin: 0px 10px 15px 10px; margin-left: auto; margin-right: auto;}
+    
+#navigation  {display:block; float: left; width: 780px; padding:3px; margin-left: 200px; font-size: 18px;}
+#navigation a { display: block; float: left; text-decoration: none; color: #02c0b8; padding: 5px 10px 5px 10px; border-radius: 5px;}
+#navigation a:hover { color: orange;}
+    
+#inputform  {display:block; float: left; width: 97%; padding:5px; margin: 2px; border: 0px solid #cccccc;}
+#outputsheet {display:block; float: left; width: 97%; padding:5px; margin: 2px; border: 0px solid #cccccc;}
+#totals {display:block; float: left; width: 97%; padding:5px; margin: 2px; border: 0px solid #cccccc;}
+        
+.button {display: block; float: right; padding: 8px 15px 8px 15px; background-color: #00dcd3; border:  1px solid #21b1ab; color: #ffffff; text-decoration: none; font-weight: bold; border-radius: 3px;}
+.button:hover {background-color: #21b1ab;}
