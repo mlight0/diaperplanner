@@ -74,7 +74,7 @@
             
                 <div id="inputform">
                     <h2>About DiaperPlanner.com</h2>  
-                   <img src="images/Michael-Light.jpg" width="100px" height="136" border="0" style="float:left; margin: 3px 10px  10px  10px; border: solid 1px #999999;" alt="Michael Light" />
+                   <img src="../images/Michael-Light.jpg" width="100px" height="136" border="0" style="float:left; margin: 3px 10px  10px  10px; border: solid 1px #999999;" alt="Michael Light" />
                     When Michael Light and his wife Toni found out they were pregnant they were very excited. When they discovered they were having twins they had to 
                     do a double-take! Speachless actually!
                     <br/><br/>
