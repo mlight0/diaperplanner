@@ -88,7 +88,7 @@
                     Now everyone can input the estimated baby's weight and the number of children (for multiples) to find out how many diapers they will need for the first year. 
                     Make sure you're sitting down!
                     <br/><br/>
-                    <a href="Default.aspx">Click here</a> to go to the Diaper Calculator.
+                    <a href="index.php">Click here</a> to go to the Diaper Calculator.
                
                
                 
