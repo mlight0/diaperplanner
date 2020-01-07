@@ -73,11 +73,10 @@
                 </ul>
                 <br><br>
                 <hr>
+                
                 <br><br>
-
-                <?php include 'ads/adrotator.php'; ?>
-
-
+                <?php include 'includes/google_ads.php'; ?>
+                <?php /*include 'ads/adrotator.php';*/ ?>
                 
             <!-- Left Column: Ends -->
             </td>
@@ -156,13 +155,13 @@
                 
                 <br>
                 
-<?php 
+                    <?php 
 
-if (isset($_POST["DropDownListNumberOfChildren"])){ 
- 
-    include 'includes/diapertable.php';
+                    if (isset($_POST["DropDownListNumberOfChildren"])){ 
+                    
+                        include 'includes/diapertable.php';
 
-}?>
+                    }?>
 
                  
                 
@@ -170,14 +169,14 @@ if (isset($_POST["DropDownListNumberOfChildren"])){
             </td>
             <td valign="top" style="width: 200px;">
             <!-- Right Column: Begins -->
-            
-            <div id="advertising">
-            <br><br>    
-            <?php  /*include 'includes/google_ads.php'; */?>
-            
-            <?php include 'ads/adrotator.php'; ?>
-
-            </div>
+                
+                <div id="advertising">
+                
+                    <br><br>
+                    <?php include 'includes/google_ads.php'; ?>
+                    <?php /*include 'ads/adrotator.php';*/ ?>
+                
+                </div>
             
             <!-- Right Column: Ends -->
             </td>

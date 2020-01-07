@@ -55,10 +55,9 @@
             <td valign="top" style="width: 200px; height: 500px; padding-top: 100px;">
             <!-- Left Column: Begins -->
                 
-                <?php /*include 'includes/google_ads.php'; */?>
                 <br><br>
-                <?php include 'ads/adrotator.php'; ?>
-
+                <?php include 'includes/google_ads.php'; ?>
+                <?php /*include 'ads/adrotator.php';*/ ?>
                 
             <!-- Left Column: Ends -->
             </td>
@@ -110,10 +109,9 @@
             
             <div id="advertising">
                 
-                <?php /*include 'includes/google_ads.php'; */?>
                 <br><br>
-                <?php include 'ads/adrotator.php'; ?>
-
+                <?php include 'includes/google_ads.php'; ?>
+                <?php /*include 'ads/adrotator.php';*/ ?>
                                     
             </div>
             
