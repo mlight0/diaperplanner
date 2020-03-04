@@ -1,4 +1,4 @@
-<h2>Diaper Table</h2>
+<h3 id="HowManyDiapers">Diaper Table</h3>
                     
                     Based on the information provided above this table shows the Week, Estimated Weight, Diaper Size and Total Diapers 
                     expected per week for the first year. You can find the total number of diapers for each size in the 
@@ -135,9 +135,9 @@
                 
 
                  <div id="totals">
-                
+                <br/>
                  <a name="Totals">
-                 	<h2>First Year Diaper Totals By Size</h2></a>
+                 	<h3>First Year Diaper Totals By Size</h3></a>
                      <table cellpadding="5" cellspacing="0" style="width: 100%;" border="1">
                         <tr style="background-color: #21b1ab; color: #ffffff; font-weight: bold;">
                            

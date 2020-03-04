@@ -1,15 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>DiaperPlanner.com - Diaper Calculator</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	DiaperPlanner.com - Diaper Calculator
+</title>
 
-  <script>
+<link href="Styles/StyleSheet.css" rel="stylesheet" type="text/css" />
+
+    <script>
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
                 (i[r].q = i[r].q || []).push(arguments)
@@ -21,48 +17,55 @@
         ga('send', 'pageview');
 
     </script>
-
-  <style>
-  .fakeimg {
-    height: 200px;
-    background: #aaa;
-  }
-
-    #header {
-        background-image: url("Images/DiaperPlanner-Header.jpg"); 
-        background-repeat:no-repeat; 
-        background-position: left top;
-        background-size: cover;
-        background-color: #ffffff;
-        
-    }
-    h2 {color: #21b1ab;}
-    h3 {color: #21b1ab;}
-    h4 {color: #21b1ab;}
-    h5 {color: #21b1ab;}
-    .nav-item a{color: #21b1ab;}
-
-    a {color: #21b1ab;}
-
-  
-  </style>
+    
 </head>
-
 <body>
-<!-- Navigation: Begins -->
-            
-<?php include 'includes/topnav.php';?>
-            
-<!-- Navigation: End -->
 
-<div class="container" style="margin-top:30px">
-  <div class="row">
-
-    <div class="col-sm-8">
- <!-- Center Column: Begins -->
+    <!-- Facebook Javascript SDK -->
+    <div id="fb-root"></div>
+    <script>    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+        fjs.parentNode.insertBefore(js, fjs);
+    } (document, 'script', 'facebook-jssdk'));
+    </script>
+    
+ <div id="content">
+       
+    <table cellpadding="5" cellspacing="0" style="width: 1000px;" border="0">
+        <tr>
+            <td valign="top" colspan="3" style="height: 100px;">
+            <!-- Header: Begins -->
+            &nbsp;
+            <!-- Header: End -->
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" colspan="3" style="height: 30px;">
+            <!-- Navigation: Begins -->
+            
+				<?php include 'includes/topnav.php';?>
+            
+            <!-- Navigation: End -->
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" style="width: 200px; height: 500px; padding-top: 100px;">
+            <!-- Left Column: Begins -->
+                
+                <br><br>
+                <?php include 'includes/google_ads.php'; ?>
+                <?php /*include 'ads/adrotator.php';*/ ?>
+                
+            <!-- Left Column: Ends -->
+            </td>
+            <td valign="top" style="width: 570px;">
+            <!-- Center Column: Begins -->
             
             
- <div style="display: block; float: left; height: 20px; width: 100%; text-align: right;">
+            <div style="display: block; float: left; height: 20px; width: 100%; text-align: right;">
             
             <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.DiaperPlanner.com" data-hashtags="Diapers">Tweet</a>
             <script>    !function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = "//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } } (document, "script", "twitter-wjs");</script>
@@ -87,7 +90,7 @@
                     Now everyone can input the estimated baby's weight and the number of children (for multiples) to find out how many diapers they will need for the first year. 
                     Make sure you're sitting down!
                     <br/><br/>
-                    <a href="index.php">Click here</a> to go to the Diaper Calculator.
+                    <a href="Default.aspx">Click here</a> to go to the Diaper Calculator.
                
                
                 
@@ -100,28 +103,33 @@
 
                 
             <!-- Center Column: Ends -->
-    </div>
-
-
-    <div class="col-sm-4">
-  
+            </td>
+            <td valign="top" style="width: 200px;">
+            <!-- Right Column: Begins -->
+            
+            <div id="advertising">
                 
                 <br><br>
-                <?php include 'includes/google_ads.php'; ?>    </div>
-
+                <?php include 'includes/google_ads.php'; ?>
+                <?php /*include 'ads/adrotator.php';*/ ?>
+                                    
+            </div>
+            
+            <!-- Right Column: Ends -->
+            </td>
+        </tr>
+        <tr>
+            <td valign="middle" colspan="3" style="height: 50px;">
+             <!-- Footer: Begins -->
+            
+				<?php include 'includes/bottomnav.php';?>
+				                          
+             <!-- Footer: End -->
+            </td>
+        </tr>
+    </table>
     
-
-  </div>
-</div>
-
-
-<div class="jumbotron text-center" style="margin-bottom:0">
-  <p>
-  <?php include 'includes/bottomnav.php';?>
-
-  </p>
-</div>
-
-
+    </div>
+ 
 </body>
 </html>
