@@ -109,7 +109,7 @@
                             </td>
                             <td valign="top" nowrap>
                             <div class="form-group">
-                                <input name="txtStartingWeight" type="text"  class="form-control" value="<?php echo $startingweight;?>" maxlength="5" id="txtStartingWeight" class="alignright" style="width:40px;" />
+                                <input name="txtStartingWeight" type="text"  class="form-control" value="<?php echo $startingweight;?>" maxlength="5" id="txtStartingWeight" class="alignright" style="width:50px;" />
                             </div>
                             </td>
                             <td valign="middle" nowrap>
