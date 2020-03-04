@@ -44,7 +44,6 @@
 
     a {color: #21b1ab;}
 
-  
   </style>
 </head>
 
@@ -63,14 +62,15 @@
 
     <!-- Center Column: Begins -->
             
-      <div style="display: block; float: left; height: 20px; width: 100%; text-align: right;">
+      <div style="display: block; float: left; height: 20px; width: 100%; text-align: right; margin-bottom: 10px;">
 
-        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.DiaperPlanner.com" data-hashtags="Diapers">Tweet</a>
+        <div style="display:block; float:right; padding:4px;"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.DiaperPlanner.com" data-hashtags="Diapers">Tweet</a></div>
         <script>    !function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = "//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } } (document, "script", "twitter-wjs");</script>
 
         <div class="fb-like" data-href="http://www.diaperplanner.com" data-send="false" data-layout="button_count" data-width="20" data-show-faces="false" data-font="verdana"></div>
 
       </div>
+
                 
       <h2>Buy Diapers</h2>  
       
@@ -109,6 +109,7 @@
       <?php include 'includes/google_ads.php'; ?>   
     
     </div>
+    
   </div>
 </div>
 
