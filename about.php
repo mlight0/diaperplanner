@@ -61,7 +61,6 @@
     <div class="col-sm-8">
     <!-- Center Column: Begins -->
             
-            
       <div style="display: block; float: left; height: 20px; width: 100%; text-align: right; margin-bottom: 10px;">
 
         <div style="display:block; float:right; padding:4px;"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.DiaperPlanner.com" data-hashtags="Diapers">Tweet</a></div>
@@ -95,7 +94,8 @@
 
       <br><br>
       <?php include 'includes/google_ads.php'; ?>
-
+      <br><br>
+      
     </div>
   </div>
 </div>
