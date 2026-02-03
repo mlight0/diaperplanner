@@ -1,0 +1,14 @@
+<tr><th>Size</th><th>Weight</th><th>Age</th><th>Weeks</th><th>Daily</th><th>Total</th></tr>
+</thead>
+<tbody id="annual-breakdown"></tbody>
+</table>
+</div>
+<div id="stockpile-tab" class="tab-content">
+<h3>Stockpile Guide</h3>
+<p class="subtitle">Boxes to buy (100-150 diapers each)</p>
+<div class="stockpile-grid" id="stockpile-grid"></div>
+</div>
+</div>
+<div class="cta-banner" id="survey-cta">
+<h3>🎯 Find your perfect brand!</h3>
+<p>30-second Fit & Feel Survey</p>

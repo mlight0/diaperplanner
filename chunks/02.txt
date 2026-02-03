@@ -1,0 +1,15 @@
+<div class="card" id="calculator-section">
+<h2>🧮 Diaper Calculator</h2>
+<div class="form-group">
+<label>Baby Status</label>
+<div class="input-row">
+<label class="survey-option">
+<input type="radio" name="baby-status" value="born" checked onchange="toggleBabyInput()">
+<span>👶</span> Already born
+</label>
+<label class="survey-option">
+<input type="radio" name="baby-status" value="expecting" onchange="toggleBabyInput()">
+<span>🤰</span> Expecting
+</label>
+</div>
+</div>

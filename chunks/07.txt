@@ -1,0 +1,13 @@
+<div class="tab-nav">
+<button class="tab-btn active" onclick="showTab('weekly')">📅 Weekly</button>
+<button class="tab-btn" onclick="showTab('annual')">📆 Annual</button>
+<button class="tab-btn" onclick="showTab('stockpile')">📦 Stockpile</button>
+</div>
+<div id="weekly-tab" class="tab-content active">
+<h3>This Week</h3>
+<div class="weekly-breakdown" id="weekly-breakdown"></div>
+</div>
+<div id="annual-tab" class="tab-content">
+<h3>Year One Breakdown</h3>
+<table class="size-table">
+<thead>

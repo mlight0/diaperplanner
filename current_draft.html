@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DiaperPlanner.com - Smart Diaper Calculator</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+<div class="logo">👶</div>
+<h1>DiaperPlanner</h1>
+<p>Smart diaper calculator + brand matcher for Year One</p>
+</header>
+<div class="container">
+<div class="card" id="calculator-section">
+<h2>🧮 Diaper Calculator</h2>
+<div class="form-group">
+<label>Baby Status</label>
+<div class="input-row">
+<label class="survey-option">
+<input type="radio" name="baby-status" value="born" checked onchange="toggleBabyInput()">
+<span>👶</span> Already born
+</label>
+<label class="survey-option">
+<input type="radio" name="baby-status" value="expecting" onchange="toggleBabyInput()">
+<span>🤰</span> Expecting
+</label>
+</div>
+</div>
+<div id="born-inputs">
+<div class="input-row">
+<div class="form-group">
+<label for="baby-age">Age (months)</label>
+<select id="baby-age">
+<option value="0">Newborn (0-1 mo)</option>
+<option value="1">1 month</option>
+<option value="2">2 months</option>
+<option value="3">3 months</option>
+<option value="4">4 months</option>
+<option value="5">5 months</option>
+<option value="6">6 months</option>
+<option value="7">7 months</option>
+<option value="8">8 months</option>
+<option value="9">9 months</option>
+<option value="10">10 months</option>
+<option value="11">11 months</option>
+<option value="12">12+ months</option>
+</select>
+</div>
+<div class="form-group">
+<label for="current-weight">Weight (lbs)</label>
+<input type="number" id="current-weight" placeholder="e.g., 12" min="4" max="45" step="0.5">
+</div>
+</div>
+</div>
+<div id="expecting-inputs" class="hidden">
+<div class="form-group">
+<label for="due-date">Due Date</label>
+<input type="date" id="due-date">
+</div>
+</div>
+<div class="tip-box">
+<strong>💡 Pro Tip:</strong> We use CDC infant growth charts to estimate time in each size.
+</div>
+<button class="btn" onclick="calculateDiapers()">📊 Calculate My Diaper Needs</button>
+</div>
+<div id="results-section" class="hidden">
+<div class="card results-section">
+<h2>📊 Your Diaper Forecast</h2>
+<div class="stat-grid">
+<div class="stat-box">
+<div class="number" id="weekly-total">--</div>
+<div class="label">This Week</div>
+</div>
+<div class="stat-box">
+<div class="number" id="monthly-total">--</div>
+<div class="label">This Month</div>
+</div>
+<div class="stat-box">
+<div class="number" id="year-total">--</div>
+<div class="label">Year One</div>
+</div>
+<div class="stat-box">
+<div class="number" id="current-size-display">--</div>
+<div class="label">Current Size</div>
+</div>
+</div>
+<div class="tab-nav">
+<button class="tab-btn active" onclick="showTab('weekly')">📅 Weekly</button>
+<button class="tab-btn" onclick="showTab('annual')">📆 Annual</button>
+<button class="tab-btn" onclick="showTab('stockpile')">📦 Stockpile</button>
+</div>
+<div id="weekly-tab" class="tab-content active">
+<h3>This Week</h3>
+<div class="weekly-breakdown" id="weekly-breakdown"></div>
+</div>
+<div id="annual-tab" class="tab-content">
+<h3>Year One Breakdown</h3>
+<table class="size-table">
+<thead>
+<tr><th>Size</th><th>Weight</th><th>Age</th><th>Weeks</th><th>Daily</th><th>Total</th></tr>
+</thead>
+<tbody id="annual-breakdown"></tbody>
+</table>
+</div>
+<div id="stockpile-tab" class="tab-content">
+<h3>Stockpile Guide</h3>
+<p class="subtitle">Boxes to buy (100-150 diapers each)</p>
+<div class="stockpile-grid" id="stockpile-grid"></div>
+</div>
+</div>
+<div class="cta-banner" id="survey-cta">
+<h3>🎯 Find your perfect brand!</h3>
+<p>30-second Fit & Feel Survey</p>

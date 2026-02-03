@@ -1,0 +1,131 @@
+/* Custom Styles complementing Materialize */
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #fafafa;
+}
+
+/* Transitions */
+.hidden {
+    display: none !important;
+}
+
+.transition-fade {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Utilities */
+.mb-3 { margin-bottom: 1.5rem !important; }
+.mb-4 { margin-bottom: 2rem !important; }
+.pt-4 { padding-top: 2rem !important; }
+
+/* Hero Section */
+.hero-section {
+    padding: 60px 0 40px;
+}
+.hero-section h3 {
+    font-weight: 700;
+}
+
+/* Rounded Buttons */
+.btn-rounded {
+    border-radius: 50px;
+    text-transform: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 0 30px;
+}
+
+/* Radio Cards (Expecting vs Born) */
+.radio-card-label {
+    margin: 0 10px;
+    cursor: pointer;
+}
+/* Overriding Materialize radio styles for bigger hit area if needed, 
+   but standard Materialize radio buttons look decent. 
+   Let's just keep them clean. */
+
+/* Radio Circle (Baby Count) */
+.radio-circle {
+    display: inline-block;
+    margin: 0 15px;
+}
+.radio-circle span {
+    font-size: 1.2rem;
+    padding-left: 28px; /* space for the radio circle */
+}
+
+/* Cards */
+.card {
+    border: none;
+}
+.card-title {
+    font-weight: 700;
+}
+
+/* Results Section */
+.card-panel h5 {
+    font-weight: 700;
+    margin: 10px 0 5px;
+}
+
+/* Stockpile List Items */
+.stockpile-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #f1f1f1;
+}
+.stockpile-item:last-child {
+    border-bottom: none;
+}
+.stock-size {
+    font-weight: 700;
+    color: #26a69a; /* teal lighten-1 */
+    font-size: 1.1rem;
+}
+.stock-qty {
+    font-weight: 600;
+    color: #424242;
+}
+.stock-boxes {
+    background: #e0f2f1; /* teal lighten-5 */
+    padding: 5px 10px;
+    border-radius: 12px;
+    color: #00695c;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* Tables */
+table.highlight > tbody > tr:hover {
+    background-color: #e0f2f1;
+}
+
+/* Form inputs focus color override */
+input:not([type]):focus:not([readonly]),
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=url]:not(.browser-default):focus:not([readonly]),
+input[type=time]:not(.browser-default):focus:not([readonly]),
+input[type=date]:not(.browser-default):focus:not([readonly]),
+input[type=datetime]:not(.browser-default):focus:not([readonly]),
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+input[type=tel]:not(.browser-default):focus:not([readonly]),
+input[type=number]:not(.browser-default):focus:not([readonly]),
+input[type=search]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #26a69a;
+    box-shadow: 0 1px 0 0 #26a69a;
+}
+input:not([type]):focus:not([readonly]) + label,
+input[type=number]:not(.browser-default):focus:not([readonly]) + label {
+    color: #26a69a;
+}
