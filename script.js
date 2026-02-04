@@ -23,56 +23,117 @@ const app = {
     brands: {
         'coterie': { 
             name: 'Coterie', 
-            url: 'https://coterie.com', 
-            subUrl: 'https://coterie.com/subscribe',
+            url: 'https://www.amazon.com/s?k=coterie+diapers&tag=diaperplann0e-20', 
+            subUrl: 'https://www.amazon.com/s?k=coterie+diapers&tag=diaperplann0e-20',
+            sizeUrls: {
+                'N': 'https://amzn.to/4rA165Y',
+                '1': 'https://amzn.to/4qQi2oC',
+                '2': 'https://amzn.to/4avTLhO',
+                '3': 'https://amzn.to/4qQhRJY',
+                '4': 'https://amzn.to/3NUiyDv',
+                '5': 'https://amzn.to/3LPKHer'
+            },
             reason: 'The "Rolls Royce" of diapers. Unmatched softness and wicking.',
             bullets: ['Hypoallergenic & fragrance-free', 'High capacity (great for night)', 'Sustainable materials'],
             priceTier: 3 // $$$
         },
         'honest': { 
             name: 'Honest Company', 
-            url: 'https://www.amazon.com/s?k=honest+diapers', 
-            subUrl: 'https://www.amazon.com/s?k=honest+diapers', // Amazon SNS
+            url: 'https://www.amazon.com/s?k=honest+diapers&tag=diaperplann0e-20', 
+            subUrl: 'https://www.amazon.com/s?k=honest+diapers&tag=diaperplann0e-20', // Amazon SNS
+            sizeUrls: {
+                'N': 'https://amzn.to/3ZgMhsJ',
+                '1': 'https://amzn.to/4adOGcG',
+                '2': 'https://amzn.to/4aanTOu',
+                '3': 'https://amzn.to/4rzfo6M',
+                '4': 'https://amzn.to/4r50WUk',
+                '5': 'https://amzn.to/3NXgsmi',
+                '6': 'https://amzn.to/3LQpxgh',
+                '7': 'https://amzn.to/4qrxsik'
+            },
             reason: 'Clean ingredients meets adorable style.',
             bullets: ['Plant-based materials', 'Super cute prints', 'Gentle on sensitive skin'],
             priceTier: 2 // $$
         },
         'kirkland': { 
             name: 'Kirkland Signature', 
-            url: 'https://www.costco.com/diapers.html', 
-            subUrl: 'https://www.costco.com/diapers.html',
+            url: 'https://www.amazon.com/s?k=kirkland+diapers&tag=diaperplann0e-20', 
+            subUrl: 'https://www.amazon.com/s?k=kirkland+diapers&tag=diaperplann0e-20',
+            sizeUrls: {
+                '1': 'https://amzn.to/3NXbTZh',
+                '2': 'https://amzn.to/4te7elO',
+                '3': 'https://amzn.to/4avgvhZ',
+                '4': 'https://amzn.to/4c7oCCv',
+                '5': 'https://amzn.to/4ahVYfF',
+                '6': 'https://amzn.to/4c6Zn3g'
+            },
             reason: 'The undisputed champion of value (rumored to be made by Huggies).',
             bullets: ['Unbeatable price point', 'Great leak protection', 'Requires Costco membership'],
             priceTier: 1 // $
         },
         'luvs': { 
             name: 'Luvs Pro Level', 
-            url: 'https://www.amazon.com/s?k=luvs+diapers', 
-            subUrl: 'https://www.amazon.com/s?k=luvs+diapers',
+            url: 'https://www.amazon.com/s?k=luvs+diapers&tag=diaperplann0e-20', 
+            subUrl: 'https://www.amazon.com/s?k=luvs+diapers&tag=diaperplann0e-20',
+            sizeUrls: {
+                '1': 'https://amzn.to/4kAeO6B',
+                '2': 'https://amzn.to/45Kv7r7',
+                '3': 'https://amzn.to/4a7mHeM',
+                '4': 'https://amzn.to/45JkQvs',
+                '5': 'https://amzn.to/4rPPPi3',
+                '6': 'https://amzn.to/46x3Etd'
+            },
             reason: 'Budget-friendly reliability with Triple Leakguards.',
             bullets: ['Very affordable', 'Nightlock technology', 'Money-back guarantee'],
             priceTier: 1 // $
         },
         'pampers': { 
             name: 'Pampers Swaddlers', 
-            url: 'https://www.amazon.com/s?k=pampers+swaddlers', 
-            subUrl: 'https://www.amazon.com/s?k=pampers+swaddlers',
+            url: 'https://www.amazon.com/s?k=pampers+swaddlers&tag=diaperplann0e-20', 
+            subUrl: 'https://www.amazon.com/s?k=pampers+swaddlers&tag=diaperplann0e-20',
+            sizeUrls: {
+                'N': 'https://amzn.to/4thQYjQ',
+                '1': 'https://amzn.to/4arv9H3',
+                '2': 'https://amzn.to/3Oky2ke',
+                '3': 'https://amzn.to/4kd2tom',
+                '4': 'https://amzn.to/4kqKtHl',
+                '5': 'https://amzn.to/3MdtSKl',
+                '6': 'https://amzn.to/3MbRNK7',
+                '7': 'https://amzn.to/467W0Wj',
+                '8': 'https://amzn.to/45JkN2K'
+            },
             reason: '#1 Hospital choice. Ultra-soft with a BreatheFree liner.',
             bullets: ['Umbilical cord notch (Newborn)', 'Wetness indicator', 'Trusted reliability'],
             priceTier: 2 // $$
         },
         'huggies': { 
             name: 'Huggies Overnites', 
-            url: 'https://www.amazon.com/s?k=huggies+overnites', 
-            subUrl: 'https://www.amazon.com/s?k=huggies+overnites',
+            url: 'https://www.amazon.com/s?k=huggies+overnites&tag=diaperplann0e-20', 
+            subUrl: 'https://www.amazon.com/s?k=huggies+overnites&tag=diaperplann0e-20',
+            sizeUrls: {
+                '3': 'https://amzn.to/4kd0a4O',
+                '4': 'https://amzn.to/3OmvuSH',
+                '5': 'https://amzn.to/3ZcMKMD',
+                '6': 'https://amzn.to/4c8D25q',
+                '7': 'https://amzn.to/4rxrtt3'
+            },
             reason: 'Designed for heavy wetters and long stretches of sleep.',
             bullets: ['Double Grip strips', 'DryTouch liner', 'Up to 12 hours protection'],
             priceTier: 2 // $$
         },
         'dyper': { 
             name: 'Dyper', 
-            url: 'https://dyper.com', 
-            subUrl: 'https://dyper.com/subscribe',
+            url: 'https://www.amazon.com/s?k=dyper+diapers&tag=diaperplann0e-20', 
+            subUrl: 'https://www.amazon.com/s?k=dyper+diapers&tag=diaperplann0e-20',
+            sizeUrls: {
+                'N': 'https://amzn.to/3MnpkRJ',
+                '1': 'https://amzn.to/4tffu4T',
+                '2': 'https://amzn.to/4tgzNyV',
+                '3': 'https://amzn.to/46vaY8F',
+                '4': 'https://amzn.to/3ZcNQIf',
+                '5': 'https://amzn.to/4a7nCvK',
+                '6': 'https://amzn.to/4kha99m'
+            },
             reason: 'Eco-conscious bamboo diapers that can be composted.',
             bullets: ['Bamboo viscose fibers', 'Unprinted (no ink)', 'REDYPER compost service avail'],
             priceTier: 3 // $$$
@@ -226,41 +287,56 @@ const app = {
         
         // Render Stockpile
         let html = bulkSavingsHtml;
-        for (const [size, count] of Object.entries(r.breakdown)) {
-            const sizeInfo = this.config.sizes.find(s => s.size === size);
-            const boxes = Math.ceil(count / sizeInfo.boxSize);
-            
-            html += `
-                <div class="stockpile-item">
-                    <div class="stock-size">Size ${size}</div>
-                    <div class="stock-qty">${Math.round(count).toLocaleString()} diapers</div>
-                    <div class="stock-boxes">~${boxes} boxes</div>
-                </div>
-            `;
+        const sizeOrder = ['N', '1', '2', '3', '4', '5', '6', '7', '8']; // Explicit order
+
+        for (const size of sizeOrder) {
+            const count = r.breakdown[size];
+            if (count > 0) {
+                const sizeInfo = this.config.sizes.find(s => s.size === size);
+                // Fallback for larger sizes not in config yet but in bucket (unlikely but safe)
+                const boxSize = sizeInfo ? sizeInfo.boxSize : 100; 
+                const boxes = Math.ceil(count / boxSize);
+                
+                // Display 'NB' for 'N'
+                const displaySize = size === 'N' ? 'NB' : size;
+
+                html += `
+                    <div class="stockpile-item">
+                        <div class="stock-size">Size ${displaySize}</div>
+                        <div class="stock-qty">${Math.round(count).toLocaleString()} diapers</div>
+                        <div class="stock-boxes">~${boxes} boxes</div>
+                    </div>
+                `;
+            }
         }
         stockEl.innerHTML = html;
 
         // 3. Schedule Table
         const schedEl = document.getElementById('schedule-body');
         schedEl.innerHTML = '';
-        for (const [size, count] of Object.entries(r.breakdown)) {
-            const sizeCfg = this.config.sizes.find(s => s.size === size);
-            const daily = sizeCfg ? sizeCfg.daily : 0;
-            
-            const ageRange = size === 'N' ? '0-1 mo' : 
-                             size === '1' ? '1-3 mo' : 
-                             size === '2' ? '3-5 mo' : 
-                             size === '3' ? '5-9 mo' : 
-                             size === '4' ? '9-12 mo' : '12+ mo';
-            
-            const row = `
-                <tr>
-                    <td>Size ${size}</td>
-                    <td>${ageRange}</td>
-                    <td>${daily * r.numBabies} / day</td> 
-                </tr>
-            `;
-            schedEl.innerHTML += row;
+        for (const size of sizeOrder) {
+            const count = r.breakdown[size];
+            if (count > 0) {
+                const sizeCfg = this.config.sizes.find(s => s.size === size);
+                const daily = sizeCfg ? sizeCfg.daily : 0;
+                
+                const displaySize = size === 'N' ? 'NB' : size;
+
+                const ageRange = size === 'N' ? '0-1 mo' : 
+                                 size === '1' ? '1-3 mo' : 
+                                 size === '2' ? '3-5 mo' : 
+                                 size === '3' ? '5-9 mo' : 
+                                 size === '4' ? '9-12 mo' : '12+ mo';
+                
+                const row = `
+                    <tr>
+                        <td>Size ${displaySize}</td>
+                        <td>${ageRange}</td>
+                        <td>${daily * r.numBabies} / day</td> 
+                    </tr>
+                `;
+                schedEl.innerHTML += row;
+            }
         }
 
         document.getElementById('results-section').classList.remove('hidden');
@@ -302,8 +378,7 @@ const app = {
         document.getElementById('rec-name').innerText = brand.name;
         document.getElementById('rec-reason').innerText = brand.reason;
         
-        // Affiliate Links
-        document.getElementById('rec-link').href = brand.url;
+        // Subscription Link
         document.getElementById('sub-link').href = brand.subUrl;
         
         // Dynamic Bullets
@@ -312,6 +387,41 @@ const app = {
         brand.bullets.forEach(b => {
             bulletList.innerHTML += `<li>${b}</li>`;
         });
+
+        // --- NEW: Generate Size Grid ---
+        const gridEl = document.getElementById('rec-size-grid');
+        gridEl.innerHTML = '';
+
+        if (this.state.results && this.state.results.breakdown) {
+            // Sort sizes logically (N, 1, 2, 3...)
+            const sizeOrder = ['N', '1', '2', '3', '4', '5', '6', '7', '8'];
+            
+            for (const size of sizeOrder) {
+                const count = this.state.results.breakdown[size];
+                if (count > 0) {
+                    // Determine URL: Specific size link > Generic brand URL
+                    let buyUrl = brand.url;
+                    if (brand.sizeUrls && brand.sizeUrls[size]) {
+                        buyUrl = brand.sizeUrls[size];
+                    }
+
+                    const boxes = Math.ceil(count / (this.config.sizes.find(s => s.size === size).boxSize));
+                    const displaySize = size === 'N' ? 'NB' : size;
+
+                    const rowHtml = `
+                        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid #e0f2f1;">
+                            <div>
+                                <span class="teal-text text-darken-2" style="font-weight: 700; font-size: 1.1rem;">Size ${displaySize}</span>
+                            </div>
+                            <a href="${buyUrl}" target="_blank" class="btn waves-effect waves-light teal lighten-1 btn-small" style="border-radius: 20px;">
+                                Buy on Amazon
+                            </a>
+                        </div>
+                    `;
+                    gridEl.innerHTML += rowHtml;
+                }
+            }
+        }
 
         // Subscription Savings Calc (Phase 4 Logic)
         if (this.state.results && this.state.results.cost) {
