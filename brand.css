@@ -1,0 +1,74 @@
+
+/* --- BRAND OVERRIDES (Logo Match) --- */
+:root {
+    --brand-primary: #00bec1;
+    --brand-dark: #008e91;
+    --brand-light: #c9fcff;  /* From logo background */
+    --brand-bg: #e5feff;     /* Very light background */
+}
+
+/* Text Colors */
+.teal-text.text-lighten-2, 
+.teal-text.text-darken-3, 
+.teal-text.text-darken-2,
+.teal-text {
+    color: var(--brand-primary) !important;
+}
+
+h3.teal-text, h4.teal-text {
+    color: var(--brand-primary) !important;
+}
+
+/* Background Colors */
+.teal.lighten-1,
+.teal.darken-1 {
+    background-color: var(--brand-primary) !important;
+}
+
+.teal.lighten-5 {
+    background-color: var(--brand-bg) !important;
+}
+
+.teal.lighten-4 {
+    background-color: var(--brand-light) !important;
+}
+
+/* Buttons */
+.btn, .btn-large {
+    background-color: var(--brand-primary) !important;
+}
+.btn:hover, .btn-large:hover {
+    background-color: var(--brand-dark) !important;
+}
+
+/* Input Focus */
+input:not([type]):focus:not([readonly]),
+input[type=number]:not([readonly]):focus {
+    border-bottom: 1px solid var(--brand-primary) !important;
+    box-shadow: 0 1px 0 0 var(--brand-primary) !important;
+}
+input:not([type]):focus:not([readonly]) + label,
+input[type=number]:not([readonly]):focus + label {
+    color: var(--brand-primary) !important;
+}
+
+/* Radio Buttons */
+[type="radio"]:checked + span:after,
+[type="radio"].with-gap:checked + span:after {
+    background-color: var(--brand-primary) !important;
+    border: 2px solid var(--brand-primary) !important;
+}
+
+/* Custom Component Overrides */
+.stock-size {
+    color: var(--brand-primary);
+}
+
+.stock-boxes {
+    background: var(--brand-light);
+    color: var(--brand-dark);
+}
+
+.card-title.teal-text {
+    color: var(--brand-primary) !important;
+}
