@@ -8,7 +8,8 @@ const app = {
             { size: '2', min: 14, max: 18, daily: 8, boxSize: 142, costPerBox: 45 },
             { size: '3', min: 18, max: 28, daily: 7, boxSize: 136, costPerBox: 48 },
             { size: '4', min: 28, max: 37, daily: 6, boxSize: 116, costPerBox: 48 },
-            { size: '5', min: 37, max: 99, daily: 5, boxSize: 100, costPerBox: 50 }
+            { size: '5', min: 37, max: 45, daily: 5, boxSize: 100, costPerBox: 50 },
+            { size: '6', min: 45, max: 99, daily: 5, boxSize: 84, costPerBox: 52 }
         ],
         avgCostPerDiaper: 0.28,
         
@@ -405,7 +406,10 @@ const app = {
                         buyUrl = brand.sizeUrls[size];
                     }
 
-                    const boxes = Math.ceil(count / (this.config.sizes.find(s => s.size === size).boxSize));
+                    const sizeInfo = this.config.sizes.find(s => s.size === size);
+                    const boxSize = sizeInfo ? sizeInfo.boxSize : 100;
+                    const boxes = Math.ceil(count / boxSize);
+                    
                     const displaySize = size === 'N' ? 'NB' : size;
 
                     const rowHtml = `
