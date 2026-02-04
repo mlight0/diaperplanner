@@ -244,16 +244,20 @@ const app = {
         const schedEl = document.getElementById('schedule-body');
         schedEl.innerHTML = '';
         for (const [size, count] of Object.entries(r.breakdown)) {
+            const sizeCfg = this.config.sizes.find(s => s.size === size);
+            const daily = sizeCfg ? sizeCfg.daily : 0;
+            
             const ageRange = size === 'N' ? '0-1 mo' : 
                              size === '1' ? '1-3 mo' : 
                              size === '2' ? '3-5 mo' : 
-                             size === '3' ? '5-9 mo' : '9+ mo';
+                             size === '3' ? '5-9 mo' : 
+                             size === '4' ? '9-12 mo' : '12+ mo';
             
             const row = `
                 <tr>
                     <td>Size ${size}</td>
                     <td>${ageRange}</td>
-                    <td>${Math.round(count / (count/70)) * r.numBabies} / day</td> 
+                    <td>${daily * r.numBabies} / day</td> 
                 </tr>
             `;
             schedEl.innerHTML += row;
