@@ -1,0 +1,5 @@
+# robots.txt for diaperplanner.com
+User-agent: *
+Allow: /
+
+Sitemap: https://diaperplanner.com/sitemap.xml
