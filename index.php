@@ -4,6 +4,8 @@
   <title>DiaperPlanner.com - Diaper Calculator</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Free diaper calculator to estimate how many diapers you need for your baby's first year based on birth weight and number of children. Plan your diaper budget with DiaperPlanner.com.">
+  <link rel="canonical" href="https://diaperplanner.com/">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
