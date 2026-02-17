@@ -6,6 +6,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Free diaper calculator to estimate how many diapers you need for your baby's first year based on birth weight and number of children. Plan your diaper budget with DiaperPlanner.com.">
   <link rel="canonical" href="https://diaperplanner.com/">
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://diaperplanner.com/">
+  <meta property="og:title" content="DiaperPlanner – Free Diaper Calculator">
+  <meta property="og:description" content="Estimate how many diapers you’ll need in your baby’s first year. Plan smarter with DiaperPlanner.com.">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="DiaperPlanner – Free Diaper Calculator">
+  <meta name="twitter:description" content="Estimate how many diapers you’ll need in your baby’s first year.">
+  
+  <!-- JSON-LD: WebSite + Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "url": "https://diaperplanner.com/",
+    "name": "DiaperPlanner",
+    "description": "Free diaper calculator to estimate how many diapers you need for your baby's first year.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://www.google.com/search?q=site:diaperplanner.com+{search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "url": "https://diaperplanner.com/",
+    "name": "DiaperPlanner",
+    "logo": "https://diaperplanner.com/Images/DiaperPlanner-Header.jpg"
+  }
+  </script>
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
